@@ -2,7 +2,7 @@
  * Created by Gene on 16/3/11.
  */
 
-/// <reference path="../typings/tsd.d.ts" />
+/// <reference path="../../typings/tsd.d.ts" />
 
 import AppComponent from './app.component'
 

@@ -1,7 +1,7 @@
 /**
  * Created by Gene on 16/3/11.
  */
-/// <reference path="../typings/tsd.d.ts" />
+/// <reference path="../../typings/tsd.d.ts" />
 
 import { Router, Route, Link, browserHistory } from 'react-router';
 
