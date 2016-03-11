@@ -12,7 +12,7 @@ var webpackConfig = require("./webpack.config.js");
 
 var PATH = {
     src : {
-        html : 'src/index.html',
+        html : 'src/**/*.html',
         tsx : 'src/**/*.tsx'
     },
     build : {

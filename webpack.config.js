@@ -1,7 +1,10 @@
 module.exports = {
-    entry: './build/main.js',
+    entry: {
+        'chapter_one' : './build/chapter_one/chapter_one.js'
+    },
     output: {
-        filename: './release/dist/app.js'
+        path: './release/dist',
+        filename: '[name].build.js'
     },
     resolve: {
         extensions: ['', '.Webpack.js', '.web.js', '.ts', '.js', '.tsx']
