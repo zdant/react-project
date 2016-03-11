@@ -1,6 +1,7 @@
 module.exports = {
     entry: {
-        'chapter_one' : './build/chapter_one/chapter_one.js'
+        'chapter_one' : './build/chapter_one/chapter_one.js',
+        'chapter_two' : './build/chapter_two/chapter_two.js'
     },
     output: {
         path: './release/dist',
