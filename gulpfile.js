@@ -12,12 +12,23 @@ var webpackConfig = require("./webpack.config.js");
 
 var PATH = {
     src : {
+        html : 'src/index.html',
         tsx : 'src/**/*.tsx'
     },
     build : {
         tsx : 'build'
+    },
+    release : {
+        html : 'release'
     }
+
 };
+
+gulp.task('html', function(){
+   gulp.src(PATH.src.html)
+       .pipe(gulp.dest(PATH.release.html))
+
+});
 
 gulp.task('typescript', function(done){
 
@@ -42,5 +53,6 @@ gulp.task('del-build', ['webpack'], function(){
     del('build')
 });
 
+gulp.task('js', ['typescript', 'webpack', 'del-build']);
 
-gulp.task('default', ['typescript', 'webpack', 'del-build']);
+gulp.task('default', ['html', 'js']);
