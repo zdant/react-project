@@ -10,7 +10,7 @@ class AppComponent extends React.Component<any, any> {
 
 
     render() {
-        return <div>Hello {"啊!五环!"}</div>
+        return <div>Hello {this.props.name}</div>
     }
 }
 

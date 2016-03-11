@@ -6,7 +6,7 @@
 
 import AppComponent from './app.component'
 
-ReactDOM.render(<AppComponent name="a!wuhuan!" />, document.getElementById('container'));
+ReactDOM.render(<AppComponent name="啊!五环" />, document.getElementById('container'));
 
 
 
