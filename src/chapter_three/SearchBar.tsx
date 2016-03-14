@@ -2,9 +2,13 @@
  * Created by Gene on 16/3/11.
  */
 
-class SearchBar extends React.Component<any, any> {
+class SearchBar extends React.Component<SearchBarProps, any> {
+
+    constructor(props:SearchBarProps) {
+        super(props);
+    }
+
     private handleChange() {
-        //debugger;
         this.props.onUserInput(
             this.refs['filterTextInput']['value'],
             this.refs['inStockOnlyInput']['checked']

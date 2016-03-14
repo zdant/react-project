@@ -29,7 +29,3 @@ interface FilterableProductTableState {
 interface SearchBarProps extends FilterableProductTableState {
     onUserInput: (string, boolean) => void
 }
-
-interface SearchBarState extends FilterableProductTableState {
-
-}
