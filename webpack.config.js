@@ -1,7 +1,8 @@
 module.exports = {
     entry: {
         'chapter_one' : './build/chapter_one/chapter_one.js',
-        'chapter_two' : './build/chapter_two/chapter_two.js'
+        'chapter_two' : './build/chapter_two/chapter_two.js',
+        'chapter_three': './build/chapter_three/chapter_three.js'
     },
     output: {
         path: './release/dist',
@@ -15,4 +16,4 @@ module.exports = {
             {test: /\.js$/, loader: 'jsx-loader?harmony'}
         ]
     }
-}
+};
