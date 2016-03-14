@@ -18,7 +18,7 @@ class FilterableProductTable extends React.Component<FilterableProductTableProps
         return this.state;
     }
 
-    handleUserInput(filterText, inStockOnly) {
+    handleUserInput = (filterText, inStockOnly) => {
         this.setState({
             filterText: filterText,
             inStockOnly: inStockOnly
@@ -31,7 +31,7 @@ class FilterableProductTable extends React.Component<FilterableProductTableProps
                 <SearchBar
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
-                    onUserInput={this.handleUserInput.bind(this)}
+                    onUserInput={this.handleUserInput}
                 />
                 <ProductTable
                     products={this.props.products}
