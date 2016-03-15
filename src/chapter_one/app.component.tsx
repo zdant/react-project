@@ -3,11 +3,7 @@
  */
 /// <reference path="../../typings/tsd.d.ts" />
 
-import { Router, Route, Link, browserHistory } from 'react-router';
-
 class AppComponent extends React.Component<any, any> {
-
-
 
     render() {
         return <div>Hello {this.props.name}</div>
