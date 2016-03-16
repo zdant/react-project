@@ -19,6 +19,7 @@ render((
             <IndexRoute component={HomeComponent} />
             <Route path="/repos" component={ReposComponent}>
                 <Route path=":userName/:repoName" component={RepoComponent} />
+
             </Route>
             <Route path="/about" component={AboutComponent} />
         </Route>
