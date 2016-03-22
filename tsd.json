@@ -52,7 +52,19 @@
       "commit": "2f47c75835b837777a85287611703d683b0aaa83"
     },
     "redux/redux.d.ts": {
-      "commit": "2f47c75835b837777a85287611703d683b0aaa83"
+      "commit": "6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
+    },
+    "redux-thunk/redux-thunk.d.ts": {
+      "commit": "6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
+    },
+    "isomorphic-fetch/isomorphic-fetch.d.ts": {
+      "commit": "6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
+    },
+    "redux-logger/redux-logger.d.ts": {
+      "commit": "6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
+    },
+    "es6-shim/es6-shim.d.ts": {
+      "commit": "6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
     }
   }
 }
