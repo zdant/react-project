@@ -14,17 +14,27 @@ var PATH = {
     src: {
         html: 'src/**/*.html',
         css: 'src/**/*.css',
-        tsx: ['src/**/*.tsx']
+        sass: 'src/**/*.sass',
+        tsx: ['src/**/*.tsx'],
+        mock : 'src/**/*.json'
     },
     build: {
-        tsx: 'build'
+        tsx: 'build',
+        sass: 'build'
     },
     release: {
         html: 'release',
-        css: 'release'
+        css: 'release',
+        mock: 'release'
     }
 
 };
+
+gulp.task('mock', function () {
+    gulp.src(PATH.src.mock)
+        .pipe(gulp.dest(PATH.release.mock));
+
+});
 
 gulp.task('html', function () {
     gulp.src(PATH.src.html)
@@ -35,6 +45,9 @@ gulp.task('html', function () {
 gulp.task('css', function () {
     gulp.src(PATH.src.css)
         .pipe(gulp.dest(PATH.release.css));
+
+    gulp.src(PATH.src.sass)
+        .pipe(gulp.dest(PATH.build.sass));
 });
 
 gulp.task('typescript', function (done) {
@@ -62,4 +75,4 @@ gulp.task('del-build', ['webpack'], function () {
 
 gulp.task('build-js', ['typescript', 'webpack', 'del-build']);
 
-gulp.task('default', ['html', 'css', 'build-js']);
+gulp.task('default', ['mock', 'html', 'css', 'build-js']);
