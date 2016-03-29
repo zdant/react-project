@@ -26,7 +26,13 @@ export const fetchPosts = (username) => {
     return dispatch => {
         dispatch(requestPosts(username));
 
-        return fetch('./mock/logon.json')
+        return fetch('./mock/logon.json', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: "username="+username
+        })
             .then(response => response.json())
             .then(json => {
                 dispatch(receivePosts(json));
